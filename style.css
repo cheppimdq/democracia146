@@ -1,0 +1,127 @@
+* { /* ALGDGADU */
+    scroll-behavior: smooth;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body { /* DEMOCRACIA 146 */
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+header {
+    position: relative;
+    height: 700px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a {
+    font-size: medium;
+    display: block;
+    text-decoration: none;
+    color:  #f1f1f1;
+}
+
+article {
+    color:  #292b2f;
+    padding: 3%;
+    margin: 3%;
+    border: 3%;
+}
+
+section {
+    font-size: medium;
+    background-color:#f1f1f1;
+    }
+
+footer {
+    height: 330px;
+    position: relative;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    justify-content: center;
+    align-items: center;
+    height: 15px;
+}
+
+.galery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+img {
+        transition: all 1.125s;
+        max-width: 250px;
+        max-height: 250px;
+}
+
+img:hover{
+        transform: scale(1.125)
+}  
+
+  ul, li { /* SOCIAL */
+    display: flex;
+    flex-direction: row;
+}
+
+  ::-webkit-scrollbar { /* SCROLLBAR */
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #202225; 
+}
+::-webkit-scrollbar-thumb {
+    background: #2f3136; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #40444b; 
+}
+
+@media (min-width: 320px) and (max-width: 767px) { /* RESPONSIVE */
+    body {
+    column-count: 1;
+    }
+    header {
+    column-span: none;
+    }
+    nav {
+    column-span: none;
+    font-size: small;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+    column-count: 2;
+    }
+    header {
+    column-span: none;
+    }
+    nav {
+    column-span: all;
+    font-size: medium;
+    }
+}
+@media (min-width: 1025px) {
+    body {
+    column-count: 2;
+    }
+    header {
+    column-span: none;
+    }
+    nav {
+    column-span: all;
+    font-size: medium;
+    }
+}
+
+
