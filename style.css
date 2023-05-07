@@ -110,7 +110,8 @@ nav {
     position: sticky;
     top: 0;
     z-index: 1;
-    background-color: #ffffff;
+    background-color: #002654;
+    height: auto;
 }
 
 ul {
@@ -122,23 +123,19 @@ ul {
 
 li {
     float: left;
-    color: #002654;
 }
 
 li a {
     display: block;
-    color: #002654;
+    color: #ffffff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 li a:hover:not(.active) {
-    background-color: #ffffff;
-}
-
-li a.active {
-    color: #ffffff;
     background-color: #ce1126;
 }
+
+
 
