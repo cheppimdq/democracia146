@@ -1,35 +1,23 @@
-* { /* ALGDGADU */
+/* ALGDGADU */
+html, body {
     scroll-behavior: smooth;
-}
-
-html {
     font-family: 'Montserrat', sans-serif;
-}
-
-body { /* DEMOCRACIA 146 */
     display: flex;
     flex-direction: column;
     margin: 0px;
-    background-color:white;
+    background-color: #ffffff;
 }
 
 header {
     height: 500px;
 }
 
-a {
-    display: block;
-    text-decoration: none;
-    color:  #292b2f;
-}
-
 article {
-    height: 500px;
-    margin: 1%;
-    padding: 1%;
-    border: 1%;
+    height: 200px;
     align-items: center;
     justify-content: center;
+    background-color: #002654;
+    color: #ce1126;
 }
 
 section {
@@ -54,12 +42,15 @@ footer {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    color: white;
+    color: #ffffff;
     text-shadow: 2px 2px 8px black;
 }
 
+/* IMAGENES */
 img {
     transition: all 1.125s;
+    sha : 2px 2px 8px black;
+
 }
 img:hover{
     transform: scale(1.125)
@@ -73,10 +64,10 @@ img:hover{
     background: #252220; 
 }
 ::-webkit-scrollbar-thumb {
-    background: red; 
+    background: #002654; 
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: blue; 
+    background: #ce1126; 
 }
 
 /* RESPONSIVE */
@@ -116,3 +107,5 @@ img:hover{
     font-size: medium;
     }
 }
+
+
