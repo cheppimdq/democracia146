@@ -3,91 +3,83 @@
 }
 
 html {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body { /* DEMOCRACIA 146 */
     display: flex;
     flex-direction: column;
     margin: 0px;
+    background-color:white;
 }
 
 header {
-    position: relative;
-    height: 700px;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 500px;
 }
 
 a {
-    font-size: medium;
     display: block;
     text-decoration: none;
-    color:  #f1f1f1;
+    color:  #292b2f;
 }
 
 article {
-    color:  #292b2f;
-    padding: 3%;
-    margin: 3%;
-    border: 3%;
+    height: 500px;
+    margin: 1%;
+    padding: 1%;
+    border: 1%;
+    align-items: center;
+    justify-content: center;
+
 }
 
 section {
-    font-size: medium;
-    background-color:#f1f1f1;
+    height: 500px;
+    margin: 1%;
+    padding: 1%;
+    border: 1%;
+    align-items: center;
+    justify-content: center;
     }
 
 footer {
-    height: 330px;
-    position: relative;
+    height: 500px;
+}
+
+.parallax {
     background-attachment: fixed;
-    background-repeat: no-repeat;
     background-size: cover;
-}
-
-nav {
-    justify-content: center;
     align-items: center;
-    height: 15px;
-}
-
-.galery {
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 8px black;
 }
 
 img {
-        transition: all 1.125s;
-        max-width: 250px;
-        max-height: 250px;
+    transition: all 1.125s;
 }
-
 img:hover{
-        transform: scale(1.125)
+    transform: scale(1.125)
 }  
 
-  ul, li { /* SOCIAL */
-    display: flex;
-    flex-direction: row;
-}
-
-  ::-webkit-scrollbar { /* SCROLLBAR */
+/* SCROLLBAR */
+::-webkit-scrollbar { 
     width: 10px;
 }
 ::-webkit-scrollbar-track {
-    background: #202225; 
+    background: #252220; 
 }
 ::-webkit-scrollbar-thumb {
-    background: #2f3136; 
+    background: red; 
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #40444b; 
+    background: blue; 
 }
 
-@media (min-width: 320px) and (max-width: 767px) { /* RESPONSIVE */
+/* RESPONSIVE */
+@media (min-width: 320px) and (max-width: 767px) { 
     body {
     column-count: 1;
     }
@@ -123,5 +115,3 @@ img:hover{
     font-size: medium;
     }
 }
-
-
