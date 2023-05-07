@@ -13,26 +13,24 @@ header {
 }
 
 article {
+    margin: 1%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section {
     height: 200px;
     align-items: center;
     justify-content: center;
     background-color: #002654;
     color: #ce1126;
-}
-
-section {
-    height: 500px;
-    margin: 1%;
-    padding: 1%;
-    border: 1%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
     }
 
 footer {
-    height: 500px;
+    height: 250px;
+    background-color: #002654;
 }
 
 .parallax {
@@ -49,8 +47,7 @@ footer {
 /* IMAGENES */
 img {
     transition: all 1.125s;
-    sha : 2px 2px 8px black;
-
+    filter: drop-shadow(2px 2px 8px black);
 }
 img:hover{
     transform: scale(1.125)
@@ -108,4 +105,40 @@ img:hover{
     }
 }
 
+nav {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #ffffff;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    color: #002654;
+}
+
+li a {
+    display: block;
+    color: #002654;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ffffff;
+}
+
+li a.active {
+    color: #ffffff;
+    background-color: #ce1126;
+}
 
