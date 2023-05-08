@@ -1,57 +1,106 @@
 /* ALGDGADU */
-html, body {
+html {
     scroll-behavior: smooth;
     font-family: 'Montserrat', sans-serif;
-    display: flex;
-    flex-direction: column;
-    margin: 0px;
-    background-color: #ffffff;
 }
+
+body{
+    margin: 0;
+    background-color: whitesmoke;
+    display: block;
+}    
 
 header {
     height: 500px;
+    text-shadow: 8px 8px 16px black;
+
+}
+
+
+/* NAVEGADOR */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #002654;
+    display: flex;
+    justify-content: center;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+}
+li {
+    margin: 0.5rem;
+}
+li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: #ce1126;
 }
 
 article {
-    margin: 1%;
-    align-items: center;
-    justify-content: center;
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 3rem;
+    color: #252220;
 }
 
 section {
-    height: 200px;
+    height: 365px;
+    display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #002654;
-    color: #ce1126;
-    }
+}
 
-footer {
-    height: 250px;
+.azul {
     background-color: #002654;
 }
 
+.rojo {
+    background-color: #ce1126;
+}
+
+footer {
+}
+
+/* PARALLAX */
 .parallax {
-    background-attachment: fixed;
-    background-size: cover;
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    color: #ffffff;
-    text-shadow: 2px 2px 8px black;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+
 }
 
 /* IMAGENES */
 img {
+    max-height: 350px;
     transition: all 1.125s;
-    filter: drop-shadow(2px 2px 8px black);
+    filter: drop-shadow(2px 2px 8px #252220);
 }
 img:hover{
     transform: scale(1.125)
-}  
+}
+
+.video {
+    height: 315px;
+    width: 560px;
+}
 
 /* SCROLLBAR */
 ::-webkit-scrollbar { 
@@ -68,74 +117,21 @@ img:hover{
 }
 
 /* RESPONSIVE */
-@media (min-width: 320px) and (max-width: 767px) { 
-    body {
-    column-count: 1;
-    }
-    header {
-    column-span: none;
-    }
+
+/* For devices with a maximum width of 768px */
+@media (max-width: 768px) {
     nav {
-    column-span: none;
-    font-size: small;
+        flex-direction: column;
+        align-items: center;
     }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-    body {
-    column-count: 2;
-    }
-    header {
-    column-span: none;
-    }
-    nav {
-    column-span: all;
-    font-size: medium;
-    }
-}
-@media (min-width: 1025px) {
-    body {
-    column-count: 2;
-    }
-    header {
-    column-span: none;
-    }
-    nav {
-    column-span: all;
-    font-size: medium;
+    li {
+        margin: 0.25rem;
     }
 }
 
-nav {
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    background-color: #002654;
-    height: auto;
+/* For devices with a maximum width of 576px */
+@media (max-width: 576px) {
+    li a {
+        padding: 10px;
+    }
 }
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: #ffffff;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover:not(.active) {
-    background-color: #ce1126;
-}
-
-
-
