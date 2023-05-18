@@ -1,85 +1,180 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" class="theme">
 
 <head>
-    <meta charset="UTF-8">     <!-- METADATOS -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- RESPONSIVE WEB DESIGN -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resp.·. Log.·. Democracia N° 146</title>
-    <link rel="icon" type="image/x-icon" href="img/tricolor.svg" > <!-- FAVICOM -->
-    <meta property="og:title" content="Respetable Logia Democracia N° 146" /> <!-- OPEN GRAPH PROTOCOL -->
-    <meta property="og:type" content="Masonería"/>
-    <meta property="og:url" content="https://www.democracia146.com" />
-    <meta property="og:image" src="img/trasparente.png" />    <!-- NO OLVIDAR PONER IMAGEN PARA COMPARTIR LINKS -->
-    <meta property="og:description" content="Bajo los auspicios de la Gran Logia de la Argentina de Libres y Aceptados Masones" />
 
-    <!-- HOJA DE ESTILO - CAPAS DE PRESENTACION -->
-    <link rel="stylesheet" type="text/css" href="style.css" />     
-    <link rel="stylesheet" type="text/css" href="normalize.css" />
+    <!-- FAVICOM -->
+    <link rel="icon" href="img/tricolor.svg" type="image/x-icon">
+
+    <!-- Agrega los enlaces a los archivos CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="custom.css">
     
-    <!-- JS - FUNCIONES -->
-    <script src="functions.js"></script>
-
-    <!-- FUENTES GOOGLE - ROBOTO LIGTH 300 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <!-- FONT AWESOME - ICONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
 
 </head>
 
 <body>
 
-    <header class="parallax" style="background-image: url(img/revolucion.jpg);"> <!-- H1 -->
-        <img height="350px" src="img/trasparente.png" alt="instagram">
-        <div>
-            <h1>Respetable Logia Democracia N° 146</h1>
-            <h4>Bajo los auspicios de la Gran Logia de la Argentina de Libres y Aceptados Masones</h4>
+<!-- PARALLAX -->
+    <section class="parallax">
+        <div class="container d-flex align-items-center justify-content-center vh-100">
+            <div class="row">
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <img src="img/trasparente.png" alt="Imagen" class="img-fluid shadow-img">
+            </div>
+            <div class="col-md-6 d-flex flex-column align-items-center justify-content-center">
+                <h1 class="display-4 text-center">
+                <span class="shadow-text">Respetable Logia Democracia N° 146</span>
+                </h1>
+                <h2 class="lead text-center">
+                <span class="shadow-text">Bajo los auspicios de la Gran Logia de la Argentina de Libres y Aceptados Masones</span>
+                </h2>
+            </div>
+            </div>
         </div>
-    </header>
+    </section>
 
-    <nav>
-        <ul>
-            <li><a href="https://area-reservada.masoneria-argentina.org.ar/accounts/login/?next=/secretaria/">Área de Miembros</a></li>
-            <li><a href="https://docs.google.com/forms/d/1ouhZj94pRRS6ysfCo6fKxNMqwYl4tDkyUOJ1ZQ2NLro/viewform?edit_requested=true">Solicitud de Admisión</a></li>
-            <li><a href="https://www.facebook.com/democracia146">Facebook</a></li>
-            <li><a href="https://www.instagram.com/democracia146/">Instagram</a></li>
-        </ul>
+<!-- NAV -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="https://area-reservada.masoneria-argentina.org.ar/accounts/login/?next=/secretaria/">Área Reservada</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item nav-item-custom">
+                        <a class="nav-link" href="https://www.facebook.com/democracia146">
+                            <i class="fab fa-facebook text-white"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-item-custom">
+                        <a class="nav-link" href="https://www.instagram.com/democracia146/">
+                            <i class="fab fa-instagram text-white"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
     </nav>
 
-    <!-- DEMOCRACIA -->
 
-    <article>
-        <h4>Fundada en la ciudad de La Plata el 10 de agosto de 1898, la Respetable Logia Democracia N° 146 abatió sus columnas en el oriente de Buenos Aires en 1987, lo que simbolizó su disolución. No obstante, en 2015 retomó sus actividades masónicas en La Plata.</h4>
-    </article>
+<!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6">
+                <h2>Respetable Logia Democracia N° 146</h2>
+                <p>Fundada en la ciudad de La Plata el 10 de agosto de 1898, la Respetable Logia Democracia N° 146 abatió sus columnas en el oriente de Buenos Aires en 1987, lo que simbolizó su disolución. No obstante, en 2015 retomó sus actividades masónicas en La Plata.</p>
+            </div>
+            <div class="col-md-6">
+                <!-- Agrega aquí una imagen representativa de la Logia -->
+                <img src="img/trasparente.png" alt="Logia Image" class="img-fluid">
+            </div>
+        </div>
+        </div>
+    </section>
 
-    <!-- MAPA LA PLATA -->
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52343.02665170558!2d-57.99437029833021!3d-34.92052134724041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e62b1f0085a1%3A0xbcfc44f0547312e3!2sLa%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1683398698390!5m2!1ses!2sar" height="350" width="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <section id="video" class="py-5 position-relative">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row justify-content-center"> 
+                <div class="col-md-6">
+                    <div class="embed-responsive embed-responsive-16by9" style="height: 0; padding-bottom: 56.25%; position: relative; overflow: hidden;">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/j6XM_M4v2N8 " allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+                    </div>
+                    <div class="text-center mt-4">
+                        <p>No reconoce en la investigación científica ninguna autoridad superior a la Razón Humana y rechaza, por tanto, las verdades reveladas que aceptan las religiones positivas. Admite en su seno a personas de todos los credos religiosos, sin distinción, siempre que sean tolerantes y respeten todas las opiniones sinceramente profesadas; es decir: exentas de fanatismos, egoísmos y supersticiones.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="embed-responsive embed-responsive-16by9" style="height: 0; padding-bottom: 56.25%; position: relative; overflow: hidden;">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/gz5Xpb4Y3-Q" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+                    </div>
+                    <div class="text-center mt-4">
+                        <p>No reconoce en la investigación científica ninguna autoridad superior a la Razón Humana y rechaza, por tanto, las verdades reveladas que aceptan las religiones positivas. Admite en su seno a personas de todos los credos religiosos, sin distinción, siempre que sean tolerantes y respeten todas las opiniones sinceramente profesadas; es decir: exentas de fanatismos, egoísmos y supersticiones.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="embed-responsive embed-responsive-16by9" style="height: 0; padding-bottom: 56.25%; position: relative; overflow: hidden;">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/8DWVP5NsPsQ" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+                    </div>
+                    <div class="text-center mt-4">
+                        <p>No reconoce en la investigación científica ninguna autoridad superior a la Razón Humana y rechaza, por tanto, las verdades reveladas que aceptan las religiones positivas. Admite en su seno a personas de todos los credos religiosos, sin distinción, siempre que sean tolerantes y respeten todas las opiniones sinceramente profesadas; es decir: exentas de fanatismos, egoísmos y supersticiones.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="embed-responsive embed-responsive-16by9" style="height: 0; padding-bottom: 56.25%; position: relative; overflow: hidden;">
+                    </div>
+                    <div class="text-center mt-4">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     
-    <article>
-        <h4>Dedicamos nuestros esfuerzos a la formación de hombres libres y de buenas costumbres que trabajan incansablemente para pulir su piedra, erradicando los vicios y pasiones de la sociedad profana, aportándoles un espacio de trabajo para la superación y el crecimiento espiritual, moral y filosófico</h4>
-    </article>
 
-    <!-- YOUTUBE -->
-    <section class="rojo">
-        <iframe class="video" src="https://www.youtube.com/embed/5sF5BEDYAUk?controls=0" frameborder="0"></iframe>
+
+
+<!-- ADMISION -->
+    <section id="admission" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h3>Ingreso a la Masoneria Argentina</h3>
+                    <p>Para ingresar a la Masonería no es necesario poseer fortuna, ni conocimientos o aptitudes intelectuales extraordinarias, ni dotes morales excepcionales. Los únicos requisitos mínimos exigidos son los siguientes: Ser hombre libre y de buenas costumbres; Tener una edad mínima de 18 años. Poseer inteligencia y cultura necesaria para comprender y practicar las virtudes masónicas; Contar con medios de subsistencia para sufragar sus necesidades, las de los miembros de su familia y/o personas que tuviera a su cargo.</p>
+                    <a href="https://docs.google.com/forms/d/1ouhZj94pRRS6ysfCo6fKxNMqwYl4tDkyUOJ1ZQ2NLro/viewform?edit_requested=true" class="btn btn-primary">Solicitud de Ingreso</a>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- QUE ES LA MASONERIA -->
-    <article>
-            <h4>Para ingresar a la Masonería no es necesario poseer fortuna, ni conocimientos o aptitudes intelectuales extraordinarias, ni dotes morales excepcionales. Los únicos requisitos mínimos exigidos son los siguientes: Ser hombre libre y de buenas costumbres; Tener una edad mínima de 18 años. Poseer inteligencia y cultura necesaria para comprender y practicar las virtudes masónicas; Contar con medios de subsistencia para sufragar sus necesidades, las de los miembros de su familia y/o personas que tuviera a su cargo.</h4>
-    </article>
 
-    <!-- ARTICULO AZUL -->
-    <section class="azul">
-        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae minus cum, nemo tempore, labore rem ducimus ullam commodi porro deserunt voluptates iste doloremque praesentium perspiciatis. Sunt rerum quaerat qui quam?</h6>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="parallax" style="background-image: url(img/footer.jpg);">
-        <a href="https://www.masoneria-argentina.org.ar/">
-            <img height="150px" src="img/logo-gl-2022.png" alt="instagram">
-        </a>
+    <footer class="footer text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Enlaces útiles</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Acerca de nosotros</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-geo-alt-fill"></i> Dirección: Ciudad, País</li>
+                        <li><i class="bi bi-envelope-fill"></i> Email: ejemplo@example.com</li>
+                        <li><i class="bi bi-telephone-fill"></i> Teléfono: 123-456-7890</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2023 Tu Empresa. Todos los derechos reservados.</p>
+            </div>
+        </div>
     </footer>
+    
+
+
+<!-- Agrega los enlaces a los archivos JavaScript de Bootstrap y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0-alpha3/dist/js/bootstrap.min.js"></script>
+
+
+
 
 </body>
 

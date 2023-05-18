@@ -1,0 +1,52 @@
+.parallax {
+    background-image: url('img/revolucion2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff; /* Color blanco */
+}
+
+
+.parallax h1 {
+    font-size: 4rem;
+}
+
+.parallax p {
+    font-size: 1.5rem;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color:#0055A4;
+}
+
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: #ffffff;
+}
+
+
+.shadow-img {
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+.shadow-text {
+    text-shadow: 0 0 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-nav.ml-auto {
+    margin-left: auto;
+}
+
+.footer {
+    background-color:#0055A4;
+    color: #ffffff;
+}
