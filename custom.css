@@ -11,14 +11,6 @@
     color: #FAFAFA;
 }
 
-.parallax h1 {
-    font-size: 4rem;
-}
-
-.parallax p {
-    font-size: 1.5rem;
-}
-
 .navbar {
     position: sticky;
     top: 0;
@@ -30,12 +22,17 @@
 .navbar-custom .navbar-brand,
 .navbar-custom .nav-link {
     color: #FAFAFA;
-    font-size: large;
 }
 
 .navbar-nav.ml-auto {
     margin-left: auto;
 }
+
+.link-no-underline {
+    text-decoration: none;
+    color: #FAFAFA;
+}
+
 
 .content {
     height: calc(100vh - 60px); /* Ajusta la altura según el tamaño de la barra de navegación */
@@ -43,25 +40,20 @@
     background-color: #FAFAFA;
 }
 
-.shadow-img {
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+.gris {
+    background-color: whitesmoke;
 }
 
-.shadow-text {
-    text-shadow: 0 0 10px 10px 10px rgba(0, 0, 0, 0.5);
-}
-
-.btn-youtube {
+.btn-soli {
     background-color: #FF0000;
     color: #FAFAFA;
     cursor: pointer;
 }
 
-.btn-youtube:hover {
+.btn-soli:hover {
     background-color: #FF5757;
     color: #FAFAFA;
 }
-
 
 .footer {
     background-color:#0055A4;
