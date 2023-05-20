@@ -22,26 +22,29 @@
 
 <body>
 
-<!-- PARALLAX -->
+<!-- Contenedor principal -->
+<div class="container-fluid p-0">
+
+    <!-- PARALLAX -->
     <section class="parallax">
-        <div class="container d-flex align-items-center justify-content-center vh-100">
+        <div class="container d-flex align-items-center justify-content-center">
             <div class="row">
-            <div class="col-md-6 d-flex align-items-center justify-content-center">
-                <img src="img/trasparente.png" alt="Imagen" class="img-fluid shadow-img">
-            </div>
-            <div class="col-md-6 d-flex flex-column align-items-center justify-content-center">
-                <h1 class="display-4 text-center">
-                <span class="shadow-text">Respetable Logia Democracia N° 146</span>
-                </h1>
-                <h2 class="lead text-center">
-                <span class="shadow-text">Bajo los auspicios de la Gran Logia de la Argentina de Libres y Aceptados Masones</span>
-                </h2>
-            </div>
+                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                    <img src="img/trasparente.png" alt="Imagen" class="img-fluid shadow-img">
+                </div>
+                <div class="col-md-6 d-flex flex-column align-items-center justify-content-center">
+                    <h1 class="display-4 text-center">
+                        <span class="shadow-text">Respetable Logia Democracia N° 146</span>
+                    </h1>
+                    <h2 class="lead text-center">
+                        <span class="shadow-text">Bajo los auspicios de la Gran Logia de la Argentina de Libres y Aceptados Masones</span>
+                    </h2>
+                </div>
             </div>
         </div>
     </section>
 
-<!-- NAV -->
+    <!-- NAV -->
     <nav class="navbar navbar-expand-lg navbar-custom">
         <div class="container">
             <a class="navbar-brand" href="https://area-reservada.masoneria-argentina.org.ar/accounts/login/?next=/secretaria/">Área Reservada</a>
@@ -65,8 +68,7 @@
         </div>
     </nav>
 
-
-<!-- About Section -->
+    <!-- HISTORIA DEMOCRACIA -->
     <section id="about" class="py-5">
         <div class="container">
         <div class="row d-flex align-items-center">
@@ -82,6 +84,7 @@
         </div>
     </section>
 
+    <!-- VIDEOS GL -->
     <section id="video" class="py-5 position-relative">
         <div class="overlay"></div>
         <div class="container">
@@ -120,22 +123,27 @@
             </div>
         </div>
     </section>
-    
-
-
 
 <!-- ADMISION -->
     <section id="admission" class="py-5">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8 text-center">
-                    <h3>Ingreso a la Masoneria Argentina</h3>
+                    <h3>Ingreso a la Masonería Argentina</h3>
                     <p>Para ingresar a la Masonería no es necesario poseer fortuna, ni conocimientos o aptitudes intelectuales extraordinarias, ni dotes morales excepcionales. Los únicos requisitos mínimos exigidos son los siguientes: Ser hombre libre y de buenas costumbres; Tener una edad mínima de 18 años. Poseer inteligencia y cultura necesaria para comprender y practicar las virtudes masónicas; Contar con medios de subsistencia para sufragar sus necesidades, las de los miembros de su familia y/o personas que tuviera a su cargo.</p>
-                    <a href="https://docs.google.com/forms/d/1ouhZj94pRRS6ysfCo6fKxNMqwYl4tDkyUOJ1ZQ2NLro/viewform?edit_requested=true" class="btn btn-primary">Solicitud de Ingreso</a>
+                    <a href="https://docs.google.com/forms/d/1ouhZj94pRRS6ysfCo6fKxNMqwYl4tDkyUOJ1ZQ2NLro/viewform?edit_requested=true" class="btn btn-youtube">Solicitud de Ingreso</a>
                 </div>
             </div>
         </div>
     </section>
+
+<section id="mapa" class="py-5">
+    <div class="container">
+        <div class="mapa-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3118.006987066631!2d-57.95430288428648!3d-34.92243848038978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32ff8907c982d%3A0xc4291ea02775c7e5!2sPlaza%20Moreno!5e0!3m2!1sen!2sar!4v1620291783909!5m2!1sen!2sar" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
 
 
     <footer class="footer text-light py-4">
@@ -165,16 +173,14 @@
             </div>
         </div>
     </footer>
-    
+    </div>
 
+</div>
 
 <!-- Agrega los enlaces a los archivos JavaScript de Bootstrap y jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0-alpha3/dist/js/bootstrap.min.js"></script>
-
-
-
 
 </body>
 

@@ -1,16 +1,15 @@
 .parallax {
-    background-image: url('img/revolucion2.jpg');
+    background-image: url('img/revolucion.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 100vh;
+    height: 93vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #ffffff; /* Color blanco */
+    color: #FAFAFA;
 }
-
 
 .parallax h1 {
     font-size: 4rem;
@@ -24,15 +23,25 @@
     position: sticky;
     top: 0;
     z-index: 999;
-    background-color:#0055A4;
+    background-color: #0055A4;
+    height: 7vh;
 }
-
 
 .navbar-custom .navbar-brand,
 .navbar-custom .nav-link {
-    color: #ffffff;
+    color: #FAFAFA;
+    font-size: large;
 }
 
+.navbar-nav.ml-auto {
+    margin-left: auto;
+}
+
+.content {
+    height: calc(100vh - 60px); /* Ajusta la altura según el tamaño de la barra de navegación */
+    padding-top: 60px; /* Ajusta el padding según el tamaño de la barra de navegación */
+    background-color: #FAFAFA;
+}
 
 .shadow-img {
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
@@ -42,11 +51,19 @@
     text-shadow: 0 0 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
-.navbar-nav.ml-auto {
-    margin-left: auto;
+.btn-youtube {
+    background-color: #FF0000;
+    color: #FAFAFA;
+    cursor: pointer;
 }
+
+.btn-youtube:hover {
+    background-color: #FF5757;
+    color: #FAFAFA;
+}
+
 
 .footer {
     background-color:#0055A4;
-    color: #ffffff;
+    color: #FAFAFA;
 }
